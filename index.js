@@ -8,7 +8,7 @@ cclien.once('ready', () => {
       console.log(client.user.tag + " has logged in!")
 });
 
-client.on('message', () => {
+client.on('message', (message) => {
         if(message.content === prefix + "ping") {
         message.reply('Pong!')
         }
